@@ -5,7 +5,7 @@
 import os, sys
 import telepot
 from chatterbot import ChatBot
-#from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 #import wikipedia
 
 # land do wiki
@@ -15,12 +15,12 @@ from chatterbot import ChatBot
 os.system("clear")
 
 bot = ChatBot('Connor')
-#, trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
-#bot.set_trainer(ListTrainer)
+('trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
+bot.set_trainer(ListTrainer)
 
-#f = open("palavras.txt", "r").readlines()
-#bot.train('chatterbot.corpus.portuguese')
-#bot.train('hacking')
+f = open("palavras.txt", "r").readlines()
+bot.train('chatterbot.corpus.portuguese')
+bot.train('hacking')
 
 # connect connor
 api = "730100291:AAF-NfL2nLQZ3FEQFaMhVPiQLRjLul4HzWU"
