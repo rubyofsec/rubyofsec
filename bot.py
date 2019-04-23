@@ -15,7 +15,7 @@ from chatterbot.trainers import ListTrainer, ChatterBotCorpusTrainer
 os.system("clear")
 
 bot = ChatBot('Connor')
-('trainer='chatterbot.trainers.ChatterBotCorpusTrainer')
+trainer=('chatterbot.trainers.ChatterBotCorpusTrainer')
 bot.set_trainer(ListTrainer)
 
 f = open("palavras.txt", "r").readlines()
